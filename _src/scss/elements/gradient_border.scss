@@ -1,0 +1,36 @@
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 45deg;
+}
+
+.gradient-border-wrapper {
+  background: linear-gradient(var(--angle, 45deg), $display_colours_tertiary, $display_colours_secondary);
+  border-radius: 30px;
+  .gradient-border-content {
+    background: $display_colours_white;
+    border: 2px solid transparent;
+    border-radius: inherit;
+    padding: 30px;
+    display: block;
+    background-clip: padding-box;
+  }
+  &.gradient-rotate {
+    animation: rotateBorder 4s linear infinite;
+  }
+}
+
+div:nth-child(even) {
+  > .gradient-border-wrapper {
+    background: linear-gradient(var(--angle, 45deg), $display_colours_secondary, $display_colours_tertiary);
+  }
+}
+
+@keyframes rotateBorder {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}

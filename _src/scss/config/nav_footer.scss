@@ -1,0 +1,57 @@
+// Footer: Quick Links
+ul.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    li {
+        a {
+            color: $display_colours_primary;
+            margin: 0 30px;
+            font-size: 1.1rem;
+            &:hover {
+                color: $display_colours_secondary;
+                text-decoration: none;
+            }
+        }
+    } 
+}
+// Footer: Legal
+ul.legal {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    li {
+        border-right: 1px solid $display_colours_primary;
+        line-height: 1;
+        a {
+            padding: 0 12px;
+            font-size: 1rem;
+            line-height: 1;
+            color: $display_colours_primary;
+            font-weight: 400;
+            //font-family: $display_fonts_fonts_body_font_family;
+            &:hover {
+                color: $display_colours_black;
+                text-decoration: none;
+            }        
+        }
+        &:last-of-type {
+            border-right: 0;
+        }
+    }
+    @include media-xl-up {
+        li {
+            &:first-of-type {
+                a {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

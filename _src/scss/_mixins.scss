@@ -1,0 +1,35 @@
+// Colours
+$error: #cd2e2e;
+$success: #07a822;
+
+// Transitions
+@mixin transitionOne {
+	transition: .25s ease-in-out;
+}
+@mixin transitionTwo {
+	transition: .5s ease-in-out;
+}
+
+// Media Queries
+@mixin media-lg-up {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+@mixin media-xl-up {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin media-xxl-up {
+	@media (min-width: 1600px) {
+		@content;
+	}
+}
+
+// Helpers
+@mixin resetList {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}

@@ -1,0 +1,22 @@
+ul {
+  &.marker {
+    padding-inline-start: 30px;
+    li {
+      font-size: 1.4rem;
+      display: list-item;
+      &::marker {
+        font-size: 2rem;
+        color: inherit;
+      }
+    }
+    &.primary li::marker {
+      color: $display_colours_primary;
+    }
+    &.secondary li::marker {
+      color: $display_colours_secondary;
+    }
+    &.tertiary li::marker {
+      color: $display_colours_tertiary;
+    }
+  }
+}

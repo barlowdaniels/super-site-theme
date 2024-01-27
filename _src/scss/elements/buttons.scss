@@ -1,0 +1,84 @@
+.theme-btn {
+    @include themeBtn;
+    &.small {
+        @include themeBtnSmall;
+    }
+    &.primary {
+        @include themeBtnPrimary;
+    }
+    &.secondary {
+        @include themeBtnSecondary;
+
+    }
+    &.light-grey {
+        @include themeBtnOffWhite;
+    }
+    &.white {
+        @include themeBtnWhite;
+
+    }
+    &.outline-primary {
+        @include themeBtnOutlinePrimary;
+
+    }
+    &.outline-secondary {
+        @include themeBtnOutlineSecondary;
+    }
+    &.outline-light-grey {
+        @include themeBtnOutlineOffWhite;
+    }
+    &.outline-white {
+        @include themeBtnOutlineWhite;
+    }
+    &:hover {
+        &.hover-primary {
+            @include themeBtnHoverPrimary;
+        }
+        &.hover-secondary {
+            @include themeBtnHoverSecondary;
+        }
+        &.hover-light-grey {
+            @include themeBtnHoverOffWhite;
+        }
+        &.hover-white {
+            @include themeBtnHoverWhite;
+        }
+        &.hover-outline-primary {
+            @include themeBtnHoverOutlinePrimary;
+        }
+        &.hover-outline-secondary {
+            @include themeBtnHoverOutlineSecondary;
+        }
+        &.hover-outline-light-grey {
+            @include themeBtnHoverOutlineOffWhite;
+        }
+        &.hover-outline-white {
+            @include themeBtnHoverOutlineWhite;
+        }
+    }
+}
+
+.block-buttons {
+    .theme-btn {
+        display: block;
+        margin: 10px 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    @include media-lg-up {
+        .theme-btn {
+            margin: 0 10px;
+            display: inline-block;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

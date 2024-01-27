@@ -1,0 +1,17 @@
+header {
+    background: $display_colours_white;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px rgba($display_colours_black, .1);
+    .header-logo {
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    }
+}

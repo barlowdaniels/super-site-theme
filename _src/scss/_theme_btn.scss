@@ -1,0 +1,122 @@
+// Theme Button
+@mixin themeBtn {
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: $button_settings_font_size!important;
+  font-family: $display_fonts_fonts_heading_font_family;
+  letter-spacing: .5px;
+  border: 2px solid transparent!important;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none!important;
+  background: transparent;
+  border-radius: $button_settings_border_radius;
+  font-weight: $button_settings_font_weight;
+  @include transitionOne;
+}
+
+@mixin themeBtnSmall {
+  padding: 7px 15px;
+  font-size: .9rem;
+  border-radius: 5px;
+}
+@mixin themeBtnPrimary {
+  background: $display_colours_primary;
+  color: $display_colours_secondary;
+  &:hover {
+    background: $display_colours_secondary;
+    color: $display_colours_primary;
+  }
+}
+
+@mixin themeBtnSecondary {
+  background: $display_colours_secondary;
+  color: $display_colours_primary;
+  &:hover {
+    background: $display_colours_primary;
+    color: $display_colours_secondary;
+  }
+}
+
+@mixin themeBtnOffWhite {
+  background: $display_colours_light_grey;
+  color: $display_colours_secondary;
+  &:hover {
+    background: $display_colours_secondary;
+    color: $display_colours_light_grey;
+  }
+}
+
+@mixin themeBtnWhite {
+  background: $display_colours_white;
+  color: $display_colours_secondary;
+  &:hover {
+    background: $display_colours_secondary;
+    color: $display_colours_white;
+  }
+}
+
+@mixin themeBtnOutlinePrimary {
+  border-color: $display_colours_primary!important;
+  color: $display_colours_primary;
+}
+
+@mixin themeBtnOutlineSecondary {
+  border-color: $display_colours_secondary!important;
+  color: $display_colours_secondary;
+}
+
+@mixin themeBtnOutlineOffWhite {
+  border-color: $display_colours_light_grey!important;
+  color: $display_colours_light_grey;
+}
+
+@mixin themeBtnOutlineWhite {
+  border-color: $display_colours_white!important;
+  color: $display_colours_white;
+}
+
+@mixin themeBtnHoverPrimary {
+  background: $display_colours_primary;
+  color: $display_colours_secondary;
+}
+
+@mixin themeBtnHoverSecondary {
+  background: $display_colours_secondary;
+  color: $display_colours_primary;
+}
+
+@mixin themeBtnHoverOffWhite {
+  background: $display_colours_light_grey;
+  color: $display_colours_secondary;
+}
+
+@mixin themeBtnHoverWhite {
+  background: $display_colours_white;
+  color: $display_colours_secondary;
+  &.hover-outline {
+    border-color: $display_colours_secondary!important;
+  }
+}
+
+@mixin themeBtnHoverOutlinePrimary {
+  background: transparent;
+  border-color: $display_colours_primary!important;
+  color: $display_colours_primary;
+}
+
+@mixin themeBtnHoverOutlineSecondary {
+  background: transparent;
+  border-color: $display_colours_secondary!important;
+  color: $display_colours_secondary;
+}
+
+@mixin themeBtnHoverOutlineOffWhite {
+  background: transparent;
+  border-color: $display_colours_light_grey!important;
+}
+
+@mixin themeBtnHoverOutlineWhite {
+  background: transparent;
+  border-color: $display_colours_white!important;
+}

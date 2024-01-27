@@ -1,0 +1,47 @@
+.block-circle {
+  content: '';
+  position: absolute;
+  height: 160%;
+  max-height: 50vw;
+  aspect-ratio: 1;
+  background: $display_colours_white;
+  border-radius: 50%;
+  z-index: -1;
+  // Colour
+  &.primary {
+    background: $display_colours_primary;    
+  }
+  &.secondary {
+    background: $display_colours_secondary;
+  }
+  &.tertiary {
+    background: $display_colours_tertiary;
+  }
+  &.light-grey {
+    background: $display_colours_light_grey;
+  }
+  &.white {
+    background: $display_colours_white;
+  }
+  &.black {
+    background: $display_colours_black;
+  }
+  // Location
+  &.top-left,
+  &.top-right {
+    top: -70%;
+  }
+  &.bottom-left,
+  &.bottom-right {
+    bottom: -70%;
+  }
+  &.top-left,
+  &.bottom-left {
+    left: -10%;
+  }
+  &.top-right,
+  &.bottom-right {
+    right: -10%;
+  }
+
+}
